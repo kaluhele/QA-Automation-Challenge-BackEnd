@@ -53,10 +53,46 @@ mvn clean install
 
 Run tests:
 mvn test
+.\run-tests.bat
+
+Generate Spark Report (Karate built-in):
+The Spark HTML report will be generated automatically in: `target/karate-reports/karate-summary.html`
+
+Generate Allure Report:
+mvn allure:serve
+
+(This command will generate and open the Allure report in your browser)
+
+Or to just generate the report without opening:
+mvn allure:report
+
+The Allure report will be available at: `target/site/allure-maven/index.html`
 
 ---
 
-# Best Practices Implemented
+# Reporting
+
+This project is configured with two powerful reporting tools:
+
+## 1. Spark Reports (Built-in with Karate)
+- **Location:** `target/karate-reports/karate-summary.html`
+- **Auto-generated:** After every test run
+- **Features:** Test timeline, execution statistics, failed test details
+
+## 2. Allure Reports
+- **Location:** `target/site/allure-maven/index.html`
+- **Features:** Beautiful UI, test history, attachments, analytics, trends
+
+### How to generate Allure Reports:
+```bash
+# Generate and open report automatically
+mvn allure:serve
+
+# Or just generate without opening
+mvn allure:report
+```
+
+---
 
 - Dynamic test data (UUID generation)
 - Schema validation
