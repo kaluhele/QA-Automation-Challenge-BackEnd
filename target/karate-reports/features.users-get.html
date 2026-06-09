@@ -39,7 +39,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     </a>
     <div class="nav-count">
       <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,13 +49,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-06-08 06:54:32 p. m.</div>
+    <div>2026-06-09 11:38:54 a. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
             <a href="#[1:8]"><span>[1:8]</span> <span>Validate GET /usuarios response</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:23]"><span>[2:23]</span> <span>Scenario SHOULD fail</span></a>
           </div>
         </div>
       </div>
@@ -81,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>570</span>
+              <span>ms:</span>&nbsp;<span>603</span>
             </div>
           </div>
           <div class="step-row">
@@ -132,7 +135,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def usersSchema = read(&#39;classpath:schemas/usersResponseSchema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -181,8 +184,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/usuarios&#39;</span>
@@ -209,14 +212,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">497</div>
+    <div class="time-cell passed">494</div>
   </div>
 
    
@@ -225,7 +228,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.11">18:54:32.078 request:
+  <div class="preformatted" data-parent="0.10">11:38:53.284 request:
 1 &gt; GET https://serverest.dev/usuarios
 1 &gt; Host: serverest.dev
 1 &gt; Connection: Keep-Alive
@@ -233,7 +236,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:54:32.569 response time in milliseconds: 486
+11:38:53.770 response time in milliseconds: 485
 1 &lt; 200
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
@@ -243,13 +246,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; x-cloud-trace-context: 4975197ad11a8b170d67f79ae11cffd5
-1 &lt; date: Mon, 08 Jun 2026 23:54:32 GMT
+1 &lt; x-cloud-trace-context: 5775bab488892917a954bca078a9b83e
+1 &lt; date: Tue, 09 Jun 2026 16:38:53 GMT
 1 &lt; server: Google Frontend
-1 &lt; Content-Length: 14314
+1 &lt; Content-Length: 12178
 {
-    &quot;quantidade&quot;: 60,
+    &quot;quantidade&quot;: 50,
     &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;Updated_User_47da8496-442f-499b-9161-6cd09443feb1&quot;,
+            &quot;email&quot;: &quot;updated_user_2c1bd892-4b42-4cc8-ad18-ab718c742d53@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;01INVfiWa3vLO6yg&quot;
+        },
         {
             &quot;nome&quot;: &quot;Fulano da Silva&quot;,
             &quot;email&quot;: &quot;fulano@qa.com&quot;,
@@ -258,417 +268,340 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
         },
         {
-            &quot;nome&quot;: &quot;Blanca Ward IV&quot;,
-            &quot;email&quot;: &quot;qa.1780962756521ndbp@qa.com&quot;,
-            &quot;password&quot;: &quot;teste123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;2f84lhCNtSnZz80y&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_fa853af6-238e-46b5-9bf9-f92324921e0a&quot;,
-            &quot;email&quot;: &quot;user_9ed98fe1-bf71-4255-9132-ae55d7e79285@test.com&quot;,
+            &quot;nome&quot;: &quot;User_7d2c087a-7cb0-4cda-8e7a-f086c5095511&quot;,
+            &quot;email&quot;: &quot;user_950946e1-3293-410c-862f-6651d51cb3a0@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;3J3xVF0DqIBlswzR&quot;
+            &quot;_id&quot;: &quot;1kMSZhYltpvJFN5u&quot;
         },
         {
-            &quot;nome&quot;: &quot;teste&quot;,
-            &quot;email&quot;: &quot;md.ricciardirrsw@gmail.com&quot;,
+            &quot;nome&quot;: &quot;Ethel Berge&quot;,
+            &quot;email&quot;: &quot;Jeffry70@yahoo.com&quot;,
+            &quot;password&quot;: &quot;k4Tx6t8D0Ydix4x&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2CIy38HJjwLUflV8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_c4b060a7-ca48-41a9-bd10-8eb07c02c4b4&quot;,
+            &quot;email&quot;: &quot;user_7fceb159-0fc9-440e-9dd7-b6e0773b39e8@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2FSLz08tIHfygfTx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_0f78d498-30e4-4d20-85f2-1e46de65c9c8&quot;,
+            &quot;email&quot;: &quot;user_91b37dd4-c651-4da2-ba84-bc2c200c5415@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2HDjgBGVLqYFZtZs&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Diane Shanahan&quot;,
+            &quot;email&quot;: &quot;Georgianna.Hills1@yahoo.com&quot;,
+            &quot;password&quot;: &quot;9pOyvfzXqbnYT14&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2irOwOMlzj4pgAr9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Cheryl Hilpert DDS&quot;,
+            &quot;email&quot;: &quot;Daniella.Kessler@hotmail.com&quot;,
+            &quot;password&quot;: &quot;3VimbQPZEF3SnHE&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;33feYw5UKO3yFHV8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Test User 1781021770425&quot;,
+            &quot;email&quot;: &quot;test1781021770529@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4Wt6JsP5o3HQ4dH2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Ms. Sam Bernier&quot;,
+            &quot;email&quot;: &quot;Robyn.Bechtelar@yahoo.com&quot;,
+            &quot;password&quot;: &quot;Ugw0bKs_dYS_g9Q&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;6eqQv571MJCMk9s6&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Johnnie Hintz&quot;,
+            &quot;email&quot;: &quot;Armand_VonRueden@hotmail.com&quot;,
+            &quot;password&quot;: &quot;151yHOuVZZ79_2g&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;9FZR4vS1U8M07tVH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Updated_User_21734f99-fbbe-4ec9-bdf2-f8ccc6cf9320&quot;,
+            &quot;email&quot;: &quot;updated_user_61ffffae-d1e3-46e9-aee0-7666db895049@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;A6dPJuYidx5rHQt7&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_632e7e6f-4550-4373-9568-c55141d87122&quot;,
+            &quot;email&quot;: &quot;user_22af759a-e94e-4529-aef8-52aed2cde529@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;B56Ojt7pzYrxEvJv&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Debra Kuphal&quot;,
+            &quot;email&quot;: &quot;Edmond.Simonis38@hotmail.com&quot;,
+            &quot;password&quot;: &quot;CG8ddX6r8_EtwNi&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;CmJxEJl90Kgf5FQG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Myra Fay&quot;,
+            &quot;email&quot;: &quot;Brando35@yahoo.com&quot;,
+            &quot;password&quot;: &quot;fFrJnSYevUzo6Rj&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;F352b8g2yEvuCwWp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;beltrano@qa.com.br&quot;,
             &quot;password&quot;: &quot;teste&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;3oTlOJlQ0nhVnsjJ&quot;
+            &quot;_id&quot;: &quot;FglXX2rwukj6jMTp&quot;
         },
         {
-            &quot;nome&quot;: &quot;Crystian&quot;,
-            &quot;email&quot;: &quot;myemail@gmail.com&quot;,
-            &quot;password&quot;: &quot;mypassword&quot;,
+            &quot;nome&quot;: &quot;Test User&quot;,
+            &quot;email&quot;: &quot;test1781022655041@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;G2cs0q5KQbWcFreQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;mxho@emailteste.com&quot;,
+            &quot;password&quot;: &quot;1235&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;GDohpB5h4aqqlmL5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_71e0885a-af65-4e24-82b7-74752cb282cd&quot;,
+            &quot;email&quot;: &quot;user_453aa896-a19a-4039-9202-f95f19a1c4d2@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;IkVSPV1Ws19mltPG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_40577f41-98bd-44f3-9fc7-1ff2fdb4e9f9&quot;,
+            &quot;email&quot;: &quot;user_9832285d-493b-42f7-99bb-3286aeb119c0@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;J3OycaJlIPOPtUaC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_1b857f23-1a36-4e43-ae95-3f4fabae2ab1&quot;,
+            &quot;email&quot;: &quot;user_18d587e2-36b3-4aa5-9cef-3754dc577b19@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;LJMvWBwqf7QFI6gL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Harriet Bosco&quot;,
+            &quot;email&quot;: &quot;Bernhard84@hotmail.com&quot;,
+            &quot;password&quot;: &quot;oKsQmEiQ11wbiwA&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;QekY6NP7Gt3HeTWS&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;beltrano222@qa.com.br&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;RpQcwQmDbyLXHlj5&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_6cef9d7a-e91b-4b37-ba3c-ee715de8f49a&quot;,
+            &quot;email&quot;: &quot;user_8cb7e3fe-df6a-4f5d-842e-52b288df2b49@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;THf10401r9wCMFuu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Updated_User_a5116f58-d18b-460e-911c-287be1a8d46d&quot;,
+            &quot;email&quot;: &quot;updated_user_9c014eee-6fde-40fe-b5cd-493819cdecf4@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TJvCh1vzuctwdS3b&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Test User&quot;,
+            &quot;email&quot;: &quot;test1781023090446@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TQ5zvq9l9pQ06DJJ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Lucille Deckow&quot;,
+            &quot;email&quot;: &quot;Reymundo70@hotmail.com&quot;,
+            &quot;password&quot;: &quot;7i2W0Qqy71SJeVU&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;XCQcLjGlfIPDwI55&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_11e9168c-0f7f-44af-8995-826c3a377ecf&quot;,
+            &quot;email&quot;: &quot;user_c67a78c9-039c-484e-8508-877984508a09@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;YYhWxpMYzorhxyLw&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Updated_User_514031a8-bd83-4707-8330-c4878f39e9b1&quot;,
+            &quot;email&quot;: &quot;updated_user_2896f7f5-6125-44ee-8236-9332086f4bd5@test.com&quot;,
+            &quot;password&quot;: &quot;123456&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZcZerEue0S9qmTVn&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Melanie Abshire&quot;,
+            &quot;email&quot;: &quot;Leland.Rath@hotmail.com&quot;,
+            &quot;password&quot;: &quot;OeBHU2mLdpGsaAJ&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;diiOKViPKbQNeKKM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Eduardo&quot;,
+            &quot;email&quot;: &quot;email_teste@gmail.com&quot;,
+            &quot;password&quot;: &quot;senha_teste&quot;,
             &quot;administrador&quot;: &quot;false&quot;,
-            &quot;_id&quot;: &quot;4BOLeXCgQfWPQMN8&quot;
+            &quot;_id&quot;: &quot;e7KteKoa2HZ6UyaX&quot;
         },
         {
-            &quot;nome&quot;: &quot;User_764fb1f3-20eb-4b08-91ba-1014525e377a&quot;,
-            &quot;email&quot;: &quot;user_695fd4cf-93d5-461c-84fa-a7d896eb4716@test.com&quot;,
+            &quot;nome&quot;: &quot;Olivia Kiehn&quot;,
+            &quot;email&quot;: &quot;Carley.Grant84@hotmail.com&quot;,
+            &quot;password&quot;: &quot;wfREU3RVPX12E93&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;eXbFum8fhhF1GEVo&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Updated_User_fa74693d-a12e-4439-a2a3-572785c763e5&quot;,
+            &quot;email&quot;: &quot;updated_user_6e885f8d-653f-48e3-8a4c-58bad74f7d0f@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;5iyHvVYAq6MgGg6N&quot;
+            &quot;_id&quot;: &quot;gRgSXEtB0RE9gRnk&quot;
         },
         {
-            &quot;nome&quot;: &quot;Gabriel Santos&quot;,
-            &quot;email&quot;: &quot;gabriel@qa.com.br&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;6yuk6aPWO68n0S2V&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_292233dd-6005-48d5-9337-0156762d3ecd&quot;,
-            &quot;email&quot;: &quot;user_acdf888c-6f0d-475f-befc-f9fd70b02ea5@test.com&quot;,
+            &quot;nome&quot;: &quot;User_e9b7c2f8-9337-4fcb-81dd-e66947f6fc8f&quot;,
+            &quot;email&quot;: &quot;user_3d02b829-2554-47c4-84c2-4dc5cad23296@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;8c4BWbrhTXT71nia&quot;
+            &quot;_id&quot;: &quot;i7tJtNbSr7Y6QxQD&quot;
         },
         {
-            &quot;nome&quot;: &quot;james&quot;,
-            &quot;email&quot;: &quot;teste12345@qa.com.br&quot;,
-            &quot;password&quot;: &quot;12345&quot;,
+            &quot;nome&quot;: &quot;Tami Gorczany&quot;,
+            &quot;email&quot;: &quot;Mollie_Jacobs68@yahoo.com&quot;,
+            &quot;password&quot;: &quot;SM770buA2l2NRI6&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;AdF0WCnMr8xhf1oD&quot;
+            &quot;_id&quot;: &quot;iTIrXX7RqEBALY7f&quot;
         },
         {
-            &quot;nome&quot;: &quot;betano&quot;,
-            &quot;email&quot;: &quot;betano@betano.com&quot;,
-            &quot;password&quot;: &quot;sim&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;CaDHQHbGg9WbDZam&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;isac kkk&quot;,
-            &quot;email&quot;: &quot;isac22@gmail.com&quot;,
-            &quot;password&quot;: &quot;joselima123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;DL8WXwYgWbJlRvzL&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_aab69989-b7e4-47a3-845e-a8fa090d9cb8&quot;,
-            &quot;email&quot;: &quot;user_6ca60d87-9346-4dc6-b04a-852226b058d1@test.com&quot;,
+            &quot;nome&quot;: &quot;User_f2c8af18-15b6-4f3e-8c61-19043db4d7e6&quot;,
+            &quot;email&quot;: &quot;user_88b78676-2b5b-4373-bb34-be4bbab75dba@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;E1Ijj6wjSK8LyMe8&quot;
+            &quot;_id&quot;: &quot;ic8ou08zSXgHRY67&quot;
         },
         {
-            &quot;nome&quot;: &quot;User_5b3ef45c-daf6-4c3c-9e30-3ce2c5211410&quot;,
-            &quot;email&quot;: &quot;user_294ef9b4-ad79-4b35-b4dd-3ba023945910@test.com&quot;,
+            &quot;nome&quot;: &quot;Warren Jacobs&quot;,
+            &quot;email&quot;: &quot;Casimir_Schamberger40@yahoo.com&quot;,
+            &quot;password&quot;: &quot;EW4tPZHrqh37JrP&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;iyd7lKLLdVn9Fz0a&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Valerie Romaguera I&quot;,
+            &quot;email&quot;: &quot;Mireille_Graham@gmail.com&quot;,
+            &quot;password&quot;: &quot;6rRaKMop9fHvstl&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;jG5w3wStRGJoBo59&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_0a8f0d27-a7d2-4e62-821b-856ec0938b6b&quot;,
+            &quot;email&quot;: &quot;user_0d62d797-cfdf-43e1-b32b-334aa679b6e0@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;EMXsoBpDFw7dJw6Y&quot;
+            &quot;_id&quot;: &quot;lQ0ifpgxlHU2bWv3&quot;
         },
         {
-            &quot;nome&quot;: &quot;User_25a5d325-8d49-4c51-b5fe-58da5d60c685&quot;,
-            &quot;email&quot;: &quot;user_4d5178ee-3ba5-4f48-87cb-0b0c972ddd04@test.com&quot;,
+            &quot;nome&quot;: &quot;Mr. Louise Lang&quot;,
+            &quot;email&quot;: &quot;Eleazar56@hotmail.com&quot;,
+            &quot;password&quot;: &quot;ZSXUVhhvpAYxORP&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mAIIOcRfYLGnG017&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Jodi Harber&quot;,
+            &quot;email&quot;: &quot;Deion40@gmail.com&quot;,
+            &quot;password&quot;: &quot;vQZ6O8WCXbN0i35&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mtFAYUVxZoTZQu9s&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Mr. Inez Miller&quot;,
+            &quot;email&quot;: &quot;Eugene7@yahoo.com&quot;,
+            &quot;password&quot;: &quot;MyfxQyQCC6JaEDm&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;n2NVZ1pS8PN60Bcn&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Mike Gulgowski&quot;,
+            &quot;email&quot;: &quot;Edwardo_McClure@yahoo.com&quot;,
+            &quot;password&quot;: &quot;7JM4g3tyNft2BkM&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;nUTBxdxhDpNNQJPF&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Melanie Mills&quot;,
+            &quot;email&quot;: &quot;Ansel.Huel78@hotmail.com&quot;,
+            &quot;password&quot;: &quot;X5sgIGxO9ZtHw56&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pGKSW8KxRRxdSEhc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Test User&quot;,
+            &quot;email&quot;: &quot;test@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;qO6POyh5MqurhtJM&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Blanche Nikolaus&quot;,
+            &quot;email&quot;: &quot;Hilda76@hotmail.com&quot;,
+            &quot;password&quot;: &quot;48zjcxjBAzUDi2K&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tzNHD12XCb3ASXK2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;User_66b378d1-1f9e-42ee-83a3-d30a7adb4d41&quot;,
+            &quot;email&quot;: &quot;user_bb29bae4-1788-49d1-86e3-cfa48f5e19b2@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;FVYpk1nYqwuy94Zs&quot;
+            &quot;_id&quot;: &quot;u2yfCYOFh79hB1zi&quot;
         },
         {
-            &quot;nome&quot;: &quot;User_75bd5fa0-aa46-4002-99fb-d625afeeeb58&quot;,
-            &quot;email&quot;: &quot;user_b03aa134-a1b7-4ce9-8369-dd0488b000d4@test.com&quot;,
+            &quot;nome&quot;: &quot;Updated_User_399f7f8b-4290-4d55-90f6-cc0b1ab606ee&quot;,
+            &quot;email&quot;: &quot;updated_user_8e419221-8725-470c-91b0-555642eb3743@test.com&quot;,
             &quot;password&quot;: &quot;123456&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;GHNq1CzpGHNYvQH6&quot;
+            &quot;_id&quot;: &quot;wGaIZqQuCnzniIgJ&quot;
         },
         {
-            &quot;nome&quot;: &quot;User_9f773de4-b757-4490-a5d1-0fe0d6999461&quot;,
-            &quot;email&quot;: &quot;user_26c554c5-abed-4e60-b5ad-157dcbc6c8c7@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
+            &quot;nome&quot;: &quot;Miss Veronica Kling&quot;,
+            &quot;email&quot;: &quot;Zita_Klocko39@yahoo.com&quot;,
+            &quot;password&quot;: &quot;e1K7MvXYOrKH8pJ&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;Gf0kEV4vmbDGS5d2&quot;
+            &quot;_id&quot;: &quot;wRF3tcX9oW0tQSz9&quot;
         },
         {
-            &quot;nome&quot;: &quot;Updated_User_0081fb4c-4e00-447f-83ba-4b44b9bd2747&quot;,
-            &quot;email&quot;: &quot;updated_user_61e78c38-c4a4-4998-88f6-1c6aa93ac1eb@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
+            &quot;nome&quot;: &quot;Mercedes Beahan&quot;,
+            &quot;email&quot;: &quot;Quincy.Kilback@gmail.com&quot;,
+            &quot;password&quot;: &quot;Z4aLreq3CfAY7y5&quot;,
             &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;HDDt4R0Y2pBEKcPD&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;teste123213&quot;,
-            &quot;email&quot;: &quot;teste233232@hotmail.com&quot;,
-            &quot;password&quot;: &quot;123321&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;JxxIexImF3BkVoqF&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Isac José&quot;,
-            &quot;email&quot;: &quot;Isacjose222@gmail.com&quot;,
-            &quot;password&quot;: &quot;Harkano123!&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;JzOLtlQpDAZXB7zH&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Gabriel&quot;,
-            &quot;email&quot;: &quot;gabrielTeste@qa.com.br&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;LPhh8zNFekU7uC0f&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Fernando Nascimento Oliveira&quot;,
-            &quot;email&quot;: &quot;nando@gmail.com&quot;,
-            &quot;password&quot;: &quot;F23eo4r05&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;MEyY6h4wux5aOqcj&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_e72b8ce0-d7a7-49e8-b90e-ea3c7b45632a&quot;,
-            &quot;email&quot;: &quot;user_23e110e9-451c-4d93-936c-46dd798c47e3@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;NyLQ2B2ykaU2yhHJ&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_8595715b-62ba-405c-b71b-a7719b6cf28e&quot;,
-            &quot;email&quot;: &quot;user_38ea45e7-87a5-4b9e-a4a3-f36f652f3202@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;Q7yOhSrWJCqosSVx&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_1621d732-fcc1-4404-bc7d-c6cd2c8e0f31&quot;,
-            &quot;email&quot;: &quot;user_4ede3820-7f75-47a6-8a4d-f1c89b427e2b@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;Qo0iNHFg3UWWZeYJ&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;lucas&quot;,
-            &quot;email&quot;: &quot;1999lucasedu@gmail.com&quot;,
-            &quot;password&quot;: &quot;1234&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;RWX854oekNBhlXRv&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_67ef36ba-89b8-42db-b044-c1776cd65491&quot;,
-            &quot;email&quot;: &quot;user_fd0b3db6-2529-42cc-8acd-d66352976b7e@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;Rh72ammTogvoAjGo&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_6782be07-453c-45d2-b560-5421d2febddb&quot;,
-            &quot;email&quot;: &quot;user_b038cd76-6d11-4b1c-89d5-838ffd20c73d@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;RoIUHpyPmNcpnmo9&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Renan&quot;,
-            &quot;email&quot;: &quot;Renan@qa.com.br&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;SCSV2nw3f0wsbEHQ&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Alonzo Johnston&quot;,
-            &quot;email&quot;: &quot;qa.1780962808399nzkf@qa.com&quot;,
-            &quot;password&quot;: &quot;teste123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;SqxhUzBiJ4IPhA82&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;caio&quot;,
-            &quot;email&quot;: &quot;caio123@gmail.com&quot;,
-            &quot;password&quot;: &quot;19lucas&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;SvU7cvxwtFggrz6I&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;QA Explorer&quot;,
-            &quot;email&quot;: &quot;qa.explore.1780962566245@qa.com&quot;,
-            &quot;password&quot;: &quot;teste123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;W7Ddwal9edoTHf7u&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_7eed5c23-d807-46ec-b625-5fcd2efba9d5&quot;,
-            &quot;email&quot;: &quot;updated_user_f50ced09-5341-4dbb-a71d-c97dca02f95d@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;WubZJN4vbGZwbxgK&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;tret12312&quot;,
-            &quot;email&quot;: &quot;teste222@hotmail.com&quot;,
-            &quot;password&quot;: &quot;teste123321&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;XQ5jAZLRRVDAHpw9&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_99a69d18-2c24-41c2-a3eb-e76282be6ca3&quot;,
-            &quot;email&quot;: &quot;updated_user_9f79f9a6-26bb-4e5e-9ca0-af7c83a386cd@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;YMiWWmzDOf5dji0p&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Rafaela Teste&quot;,
-            &quot;email&quot;: &quot;fbaker@example.com&quot;,
-            &quot;password&quot;: &quot;123456789&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;aR9QhPdUdWTsmNdq&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Elbert Prohaska&quot;,
-            &quot;email&quot;: &quot;qa.1780962754567cxvs@qa.com&quot;,
-            &quot;password&quot;: &quot;teste123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;avYG8uv5CWjVfIno&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;isac Sabino&quot;,
-            &quot;email&quot;: &quot;Joselima@gmail.com&quot;,
-            &quot;password&quot;: &quot;joselima123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;b1wRUMGSICe1x3eg&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Pata Mia&quot;,
-            &quot;email&quot;: &quot;patamia@bol.com&quot;,
-            &quot;password&quot;: &quot;teste@123&quot;,
-            &quot;administrador&quot;: &quot;false&quot;,
-            &quot;_id&quot;: &quot;bJ4jkbqhsijSyTx3&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_2422f5d3-147c-4286-8f99-6c1850d58ebf&quot;,
-            &quot;email&quot;: &quot;updated_user_9dd50770-504d-4f48-a622-090aa0c9d016@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;cal1n6261TmMA9jA&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_f18dd881-3aff-42a9-9f0b-cfe0dfa95f69&quot;,
-            &quot;email&quot;: &quot;user_b1542234-13b5-4e5e-82c9-3af25671ac7c@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;dJ6hJrYC5IBQ5Tq1&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;lukas&quot;,
-            &quot;email&quot;: &quot;lukas@gmail.com&quot;,
-            &quot;password&quot;: &quot;12345678&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;dzb31IjdjmVjAoXa&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;QA Probe&quot;,
-            &quot;email&quot;: &quot;qa.probe.1780962319@qa.com&quot;,
-            &quot;password&quot;: &quot;teste123&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;eeKscbhNditPRLui&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;meu ovo esquerdo&quot;,
-            &quot;email&quot;: &quot;meuovo@gmail.com&quot;,
-            &quot;password&quot;: &quot;kpsmelbm&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;gCffZwevvwmmWs96&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;2341234321&quot;,
-            &quot;email&quot;: &quot;rrr@hotmail.com&quot;,
-            &quot;password&quot;: &quot;123321&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;gpVE38gZpWSNNd3U&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Isadora Barros&quot;,
-            &quot;email&quot;: &quot;lummasilva.473@gmail.com&quot;,
-            &quot;password&quot;: &quot;582*287&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;jVy4NUnMxcCUgWK8&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_71dc405b-2529-47e5-a0d1-bcf815bd0913&quot;,
-            &quot;email&quot;: &quot;user_e01be8ea-982a-45ed-bbe2-2b0e6e1b3660@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;lixCBx3O3ZIXYYwA&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_1aa1808c-961e-4c56-b391-b9ad4182b5b2&quot;,
-            &quot;email&quot;: &quot;updated_user_5a31bad1-694d-4ee6-a82e-04fe4e2e8654@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;m7lahtR8MHvcAQwd&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_f046e79f-52a6-4ebf-ace6-f408fff0f34f&quot;,
-            &quot;email&quot;: &quot;updated_user_09502cf2-6edb-44d8-b040-c991a9a2d9ec@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;nQMPUubRVxRd7SV4&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_b2d45251-03ff-4906-bbec-979e61135dab&quot;,
-            &quot;email&quot;: &quot;user_ae274d6d-7c61-426c-998a-16f3296aeae1@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;npiRESGQDaIGm1iF&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;gabsz&quot;,
-            &quot;email&quot;: &quot;gabrielauchoareis@gmail.com&quot;,
-            &quot;password&quot;: &quot;Gabriela@30&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;pGqhdBB1Pfd1fqws&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_518c6395-bc5c-4646-8e24-67fc6e6bafe6&quot;,
-            &quot;email&quot;: &quot;updated_user_fabb5b58-b963-49eb-a6f2-3536782fddbe@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;pJ4jooaXKzpVajzD&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Sonia Maria Adamcy&quot;,
-            &quot;email&quot;: &quot;ff@hotmail.com&quot;,
-            &quot;password&quot;: &quot;estrela&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;qkBe7EUQ4rddgYYq&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;bob&quot;,
-            &quot;email&quot;: &quot;bobantunes@gmail.com&quot;,
-            &quot;password&quot;: &quot;12345678&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;sR2w8RlLcNx3LtYG&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;teste negativo&quot;,
-            &quot;email&quot;: &quot;negativo@qa.com.br&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;t4AK6JYKXjtNO60q&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Lumma Silva&quot;,
-            &quot;email&quot;: &quot;lummaisadora582@gmail.com&quot;,
-            &quot;password&quot;: &quot;582*287&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;wEyEdkxqiJudToTo&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;example_produto&quot;,
-            &quot;email&quot;: &quot;produto_teste@example.com&quot;,
-            &quot;password&quot;: &quot;senha123&quot;,
-            &quot;administrador&quot;: &quot;false&quot;,
-            &quot;_id&quot;: &quot;xOObJUgCFxn9rDhC&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Updated_User_09b1e323-8d74-41ab-b59b-689a60ec2a21&quot;,
-            &quot;email&quot;: &quot;updated_user_fa00c2f9-ad66-4390-91ca-f21a3bd75dcb@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;y7DYvuD57XV9xfb4&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;Rafaela Teste&quot;,
-            &quot;email&quot;: &quot;davidlyons@example.com&quot;,
-            &quot;password&quot;: &quot;123456789&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;y8nCJDuXZON6sgJ0&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;teste&quot;,
-            &quot;email&quot;: &quot;teste@gmail.com&quot;,
-            &quot;password&quot;: &quot;teste&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;z72IixRs022V5gNZ&quot;
-        },
-        {
-            &quot;nome&quot;: &quot;User_335e91e6-b6c3-4144-9ae1-7307a2fdbc37&quot;,
-            &quot;email&quot;: &quot;user_5c9d153f-f81f-4940-b22a-47e82dc7baf2@test.com&quot;,
-            &quot;password&quot;: &quot;123456&quot;,
-            &quot;administrador&quot;: &quot;true&quot;,
-            &quot;_id&quot;: &quot;zZvojujh9SHh7nTs&quot;
+            &quot;_id&quot;: &quot;wrNtCfyaZyKcF9kH&quot;
         }
     ]
 }
@@ -685,8 +618,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -720,8 +653,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response contains usersSchema</span>
@@ -755,14 +688,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.usuarios == &#39;#array&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -790,14 +723,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>assert response.quantidade &gt; 0</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -818,14 +751,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>assert response.usuarios.length &gt; 0</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -853,14 +786,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match each response.usuarios == userSchema</span>
       </div>
     </div>
-    <div class="time-cell passed">58</div>
+    <div class="time-cell passed">90</div>
   </div>
 
    
@@ -870,6 +803,231 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
      
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:23]</span>
+                <span class="scenario-name">Scenario SHOULD fail</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>453</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def usersSchema = read(&#39;classpath:schemas/usersResponseSchema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userSchema = read(&#39;classpath:schemas/userItemSchema.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/usuarios-invalid&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">439</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">11:38:53.908 request:
+1 &gt; GET https://serverest.dev/usuarios-invalid
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.19)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:38:54.345 response time in milliseconds: 435
+1 &lt; 405
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 8397c22535bcf88621011f50803aa50d
+1 &lt; date: Tue, 09 Jun 2026 16:38:54 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 154
+{
+    &quot;message&quot;: &quot;Não é possível realizar GET em /usuarios-invalid. Acesse https://serverest.dev para ver as rotas disponíveis e como utilizá-las.&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">11:38:54.357 classpath:features/users-get.feature:26
+Then status 404
+status code was: 405, expected: 404, response time in milliseconds: 435, url: https://serverest.dev/usuarios-invalid, response: 
+{
+    &quot;message&quot;: &quot;Não é possível realizar GET em /usuarios-invalid. Acesse https://serverest.dev para ver as rotas disponíveis e como utilizá-las.&quot;
+}
+classpath:features/users-get.feature:26
+</div>   
 
   
 
