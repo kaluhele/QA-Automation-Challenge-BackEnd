@@ -1,0 +1,6 @@
+{
+  "nome": "Tobi Effertz",
+  "email": "ulysses3307@hotmail.com",
+  "password": "H5ytf1#EQR",
+  "administrador": "true"
+}

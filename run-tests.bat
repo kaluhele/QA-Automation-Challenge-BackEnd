@@ -2,4 +2,4 @@
 
 call mvn clean test
 
-start "" "%CD%\target\karate-reports\karate-summary.html"
+allure serve target/allure-results

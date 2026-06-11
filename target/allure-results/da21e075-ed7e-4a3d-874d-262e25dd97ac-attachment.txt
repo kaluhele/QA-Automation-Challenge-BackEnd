@@ -1,0 +1,6 @@
+{
+  "nome": "Updated_Kyung Mann",
+  "email": "updated_savannah2794@gmail.com",
+  "password": "123456",
+  "administrador": "true"
+}

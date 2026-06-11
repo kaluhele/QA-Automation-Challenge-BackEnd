@@ -1,0 +1,6 @@
+{
+  "nome": "Shavonne Kozey",
+  "email": "robin8374@hotmail.com",
+  "password": "P%RR@*lF6F6",
+  "administrador": "true"
+}

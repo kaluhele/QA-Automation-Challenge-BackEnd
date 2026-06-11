@@ -1,0 +1,6 @@
+{
+  "nome": "Mrs. Maryrose Herman",
+  "email": "wendell5787@gmail.com",
+  "password": "*0T!Xr@k$",
+  "administrador": "true"
+}

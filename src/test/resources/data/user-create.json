@@ -1,6 +1,6 @@
 {
   "nome": "default",
   "email": "default",
-  "password": "123456",
+  "password": "default",
   "administrador": "true"
 }

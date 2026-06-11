@@ -1,0 +1,6 @@
+{
+  "nome": "Annetta Anderson",
+  "email": "nguyet8971@yahoo.com",
+  "password": "246q8Qq@lyL",
+  "administrador": "true"
+}
