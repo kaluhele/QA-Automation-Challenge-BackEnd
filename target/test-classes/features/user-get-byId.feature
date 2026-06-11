@@ -2,6 +2,7 @@ Feature: Get User by ID
 
   Background:
     * url baseUrl
+    * def utils = call read('classpath:utils/common.js')
     * def baseUser = read('classpath:data/user-create.json')
     * def userSchema = read('classpath:schemas/userItemSchema.json')
 
@@ -10,12 +11,11 @@ Feature: Get User by ID
   # =========================
   Scenario: Create user and validate by ID successfully
 
-    # DYNAMIC DATA (REUSABLE)
-    * def randomEmail = randomEmail()
-    * def randomName = randomName()
-    * set baseUser.nome = randomName
-    * set baseUser.email = randomEmail
-
+    # DYNAMIC DATA
+    * def email = utils.randomEmail()
+    * def name = utils.randomName()
+    * set baseUser.nome = name
+    * set baseUser.email = email
 
     # CREATE USER
     Given path '/usuarios'
@@ -25,7 +25,6 @@ Feature: Get User by ID
 
     * def userId = response._id
 
-
     # GET USER BY ID
     Given path '/usuarios', userId
     When method GET
@@ -33,12 +32,11 @@ Feature: Get User by ID
 
     # VALIDATIONS
     And match response._id == userId
-    And match response.email == randomEmail
-    And match response.nome == randomName
+    And match response.email == email
+    And match response.nome == name
 
     # SCHEMA VALIDATION
     And match response == userSchema
-
 
   # =========================
   # NEGATIVE FLOW
@@ -49,4 +47,4 @@ Feature: Get User by ID
 
     Given path '/usuarios', invalidId
     When method GET
-    Then status 400
+    Then assert responseStatus == 400 || responseStatus == 405

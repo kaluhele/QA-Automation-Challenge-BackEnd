@@ -2,14 +2,16 @@ Feature: Delete User by ID
 
   Background:
     * url baseUrl
+    * def utils = call read('classpath:utils/common.js')
     * def baseUser = read('classpath:data/user-create.json')
 
   Scenario: Delete User by ID successfully
 
-    * def randomEmail = randomEmail()
-    * def randomName = randomName()
-    * set baseUser.nome = randomName
-    * set baseUser.email = randomEmail
+    # DYNAMIC DATA
+    * def email = utils.randomEmail()
+    * def name = utils.randomName()
+    * set baseUser.nome = name
+    * set baseUser.email = email
 
     # CREATE USER
     Given path '/usuarios'

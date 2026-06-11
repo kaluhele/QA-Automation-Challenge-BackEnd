@@ -2,17 +2,18 @@ Feature: Create User with dynamic data
 
   Background:
     * url baseUrl
+    * def utils = call read('classpath:utils/common.js')
     * def baseUser = read('classpath:data/user-create.json')
     * def userCreateSchema = read('classpath:schemas/userCreateResponse.json')
-
 
   Scenario: Create user and store ID
 
     # DYNAMIC DATA
-    * def randomEmail = randomEmail()
-    * def randomName = randomName()
-    * set baseUser.nome = randomName
-    * set baseUser.email = randomEmail
+    * def email = utils.randomEmail()
+    * def name = utils.randomName()
+
+    * set baseUser.nome = name
+    * set baseUser.email = email
 
     # CREATE USER
     Given path '/usuarios'
@@ -20,7 +21,7 @@ Feature: Create User with dynamic data
     When method POST
     Then status 201
 
-    # SCHEMA VALIDATION (NEW)
+    # SCHEMA VALIDATION
     And match response == userCreateSchema
 
     # STORE RESPONSE DATA
@@ -32,5 +33,5 @@ Feature: Create User with dynamic data
 
     # DEBUG
     * print 'USER CREATED ID:', userId
-    * print 'EMAIL:', randomEmail
-    * print 'NAME:', randomName
+    * print 'EMAIL:', email
+    * print 'NAME:', name
