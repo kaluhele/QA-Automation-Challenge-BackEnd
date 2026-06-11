@@ -52,7 +52,6 @@ mvn clean install
 # Execution
 
 Run tests:
-mvn test
 .\run-tests.bat
 
 Generate Spark Report (Karate built-in):

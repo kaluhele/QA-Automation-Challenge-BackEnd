@@ -1,0 +1,6 @@
+{
+  "nome": "Randall Murphy",
+  "email": "charlott6990@yahoo.com",
+  "password": "CQ^lp*P@g",
+  "administrador": "true"
+}
