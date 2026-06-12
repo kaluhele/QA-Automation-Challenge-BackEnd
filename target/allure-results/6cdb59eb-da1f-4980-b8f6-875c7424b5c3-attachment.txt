@@ -1,6 +1,0 @@
-{
-  "nome": "Ms. Michal West",
-  "email": "quincy9242@hotmail.com",
-  "password": "#5*21#J#N",
-  "administrador": "true"
-}

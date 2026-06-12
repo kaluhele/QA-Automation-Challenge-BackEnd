@@ -1,0 +1,313 @@
+{
+  "quantidade": 44,
+  "usuarios": [
+    {
+      "nome": "André Ryan",
+      "email": "andreryan120@gmail.com",
+      "password": "@Andre5656",
+      "administrador": "false",
+      "_id": "0BtdHsVusVXeeBn4"
+    },
+    {
+      "nome": "Fulano da Silva",
+      "email": "fulano@qa.com",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "0uxuPY0cbmQhpEz1"
+    },
+    {
+      "nome": "Juliana Pereira",
+      "email": "odsyj73m@qa.com.br",
+      "password": "teste",
+      "administrador": "false",
+      "_id": "0yTDkpYNRlmkCM3Y"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781293596562@qa.com",
+      "_id": "1BbMNpAMMLXRmwRW"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781292522789@qa.com",
+      "_id": "1QXWrj4mPENBvwc5"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291870415@qa.com",
+      "_id": "2vjinFxzN98JPeWG"
+    },
+    {
+      "nome": "QA Atualizado",
+      "email": "qa1781292527107@qa.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "45F0E4Yv3CR0MRjW"
+    },
+    {
+      "nome": "Gregory Beer",
+      "email": "kerry5596@yahoo.com",
+      "password": "vHXen2@&p",
+      "administrador": "true",
+      "_id": "4I6m9QLwhFT6Eiwb"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291810913@qa.com",
+      "_id": "5WHLMsTzw64E7o84"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291867643@qa.com",
+      "_id": "5WdpeImjW3V8NsTd"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781293600045@qa.com",
+      "_id": "5weZrqvHNLS2TE8q"
+    },
+    {
+      "nome": "rafael gelain2",
+      "email": "rafae222l@teste.com.br",
+      "password": "33",
+      "administrador": "true",
+      "_id": "6lcySwQq548PItgz"
+    },
+    {
+      "nome": "Jacquie Bayer",
+      "email": "lorine5349@outlook.com",
+      "password": "To5lR^G^P",
+      "administrador": "true",
+      "_id": "70ZJeG7RwHZ3uUc7"
+    },
+    {
+      "nome": "QA Atualizado",
+      "email": "qa1781293601278@qa.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "DrDGfebFcNYOmiz6"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781293602266@qa.com",
+      "_id": "EmNfoZ3I1B0NJ3n5"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291873009@qa.com",
+      "_id": "LTy92UpXgRZJ2RtJ"
+    },
+    {
+      "nome": "QA Atualizado",
+      "email": "qa1781291913973@qa.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "N1jcrIk9JrvhtM73"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291914924@qa.com",
+      "_id": "NBm9OTrudwxBSfZU"
+    },
+    {
+      "nome": "Admin Cadastro",
+      "email": "admin.cadastro.1781293923209@teste.com",
+      "password": "teste1234",
+      "administrador": "true",
+      "_id": "OouxWSyLsApb3O7k"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291807148@qa.com",
+      "_id": "RQCYFovqHpkmAdaO"
+    },
+    {
+      "nome": "Admin Cadastro",
+      "email": "admin.cadastro.1781294121412@teste.com",
+      "password": "teste1234",
+      "administrador": "true",
+      "_id": "S0F7DkSig6sVuENH"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781292525616@qa.com",
+      "_id": "TCI0dFLBrU6kVDii"
+    },
+    {
+      "nome": "Maria Costa",
+      "email": "lgdmya62@qa.com.br",
+      "password": "teste",
+      "administrador": "true",
+      "_id": "TMl4xJpik4VMnake"
+    },
+    {
+      "nome": "Ryan Swaniawski MD",
+      "email": "frank8845@yahoo.com",
+      "password": "EH^%$0Ro$",
+      "administrador": "true",
+      "_id": "XrX7GOGqU0n61o2K"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291808041@qa.com",
+      "_id": "YAj10334cWTjXuVc"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291870721@qa.com",
+      "_id": "a2i9WS1vWvj7BeaA"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781292525859@qa.com",
+      "_id": "aG76uQYId8YtoQ39"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291866923@qa.com",
+      "_id": "bFQUCfzY30JrZA4q"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781292527994@qa.com",
+      "_id": "d8hJ7jeaMov6QiFt"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781292521908@qa.com",
+      "_id": "dMkvXfdtAEeWAJCt"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291909141@qa.com",
+      "_id": "dyzS1CPnwm29TOmN"
+    },
+    {
+      "nome": "QA Atualizado",
+      "email": "qa1781291812200@qa.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "gD9Y0DGfbB6zSsft"
+    },
+    {
+      "nome": "QA Atualizado",
+      "email": "qa1781291872091@qa.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "gDFFRlSFDSQr1KhZ"
+    },
+    {
+      "nome": "André Ryan",
+      "email": "blabla@gmail.com",
+      "password": "andre5555",
+      "administrador": "true",
+      "_id": "hluQP00NP2223dpC"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291810591@qa.com",
+      "_id": "lu5tyOQlqyPM8woI"
+    },
+    {
+      "nome": "eriksen",
+      "email": "christian-eriksen-admin@qa.com",
+      "password": "isd123",
+      "administrador": "true",
+      "_id": "oMv3QUwlZvaUMfks"
+    },
+    {
+      "nome": "Updated_Mrs. Leighann Price",
+      "email": "updated_shawn2683@outlook.com",
+      "password": "123456",
+      "administrador": "true",
+      "_id": "pOmgrBv4Bten8qHZ"
+    },
+    {
+      "nome": "André Ryan",
+      "email": "sn.andreryan@live.com",
+      "password": "@Andre5656",
+      "administrador": "true",
+      "_id": "puB7wSIsxgZbchSW"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291908482@qa.com",
+      "_id": "reblzSsfgW63JJNg"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781293599716@qa.com",
+      "_id": "sQXxkwdzXueODm7o"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291813239@qa.com",
+      "_id": "ss4iobWqK9w2V17n"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781293595863@qa.com",
+      "_id": "tbTDQrOb9MfiWDOH"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291912348@qa.com",
+      "_id": "ucCRgR05D0R9sile"
+    },
+    {
+      "nome": "QA Test Cypress",
+      "password": "123456",
+      "administrador": "true",
+      "email": "qa1781291912614@qa.com",
+      "_id": "wTNo2lPklLSLElKa"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "Clora Bogan",
+  "email": "jay2372@gmail.com",
+  "password": "Rt8J35JEvK",
+  "administrador": "true"
+}

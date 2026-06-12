@@ -1,6 +1,0 @@
-{
-  "nome": "Venita Stehr",
-  "email": "art6328@hotmail.com",
-  "password": "@zSsiGo46",
-  "administrador": "true"
-}

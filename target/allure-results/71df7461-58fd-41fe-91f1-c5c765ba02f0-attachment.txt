@@ -1,0 +1,6 @@
+{
+  "nome": "Tyesha Powlowski",
+  "email": "deb3258@hotmail.com",
+  "password": "U$gcAYl&",
+  "administrador": "true"
+}

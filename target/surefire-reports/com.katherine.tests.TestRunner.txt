@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.katherine.tests.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.88 s <<< FAILURE! -- in com.katherine.tests.TestRunner
-features/users-get.[2:30] Scenario SHOULD fail -- Time elapsed: 0.713 s <<< FAILURE!
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.34 s <<< FAILURE! -- in com.katherine.tests.TestRunner
+features/users-get.[2:30] Scenario SHOULD fail -- Time elapsed: 0.736 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 405, expected: 404, response time in milliseconds: 525, url: https://serverest.dev/usuarios-invalid, response: 
+status code was: 405, expected: 404, response time in milliseconds: 555, url: https://serverest.dev/usuarios-invalid, response: 
 {
     "message": "Não é possível realizar GET em /usuarios-invalid. Acesse https://serverest.dev para ver as rotas disponíveis e como utilizá-las."
 }

@@ -56,3 +56,4 @@ Feature: Update User by ID
     And match response._id == userId
     And match response.nome == updatedName
     And match response.email == updatedEmail
+    And match response.administrador == 'true'

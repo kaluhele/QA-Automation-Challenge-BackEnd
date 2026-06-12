@@ -1,4 +1,0 @@
-{
-  "message": "Cadastro realizado com sucesso",
-  "_id": "BfRVGZFDwv4M3KmB"
-}

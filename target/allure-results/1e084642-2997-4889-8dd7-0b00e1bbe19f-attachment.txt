@@ -1,0 +1,6 @@
+{
+  "nome": "Gregory Beer",
+  "email": "kerry5596@yahoo.com",
+  "password": "vHXen2@&p",
+  "administrador": "true"
+}

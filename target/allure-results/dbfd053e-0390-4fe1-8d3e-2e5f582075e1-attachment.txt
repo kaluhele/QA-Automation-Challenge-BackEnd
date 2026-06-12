@@ -1,6 +1,0 @@
-{
-  "nome": "Brianna Durgan",
-  "email": "joannie2322@outlook.com",
-  "password": "c@b&Kjy#g&",
-  "administrador": "true"
-}

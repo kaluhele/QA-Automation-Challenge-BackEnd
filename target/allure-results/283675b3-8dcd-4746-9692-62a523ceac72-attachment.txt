@@ -1,0 +1,6 @@
+{
+  "nome": "Nicolle Kertzmann",
+  "email": "wilburn9821@outlook.com",
+  "password": "Q%vnQdy!",
+  "administrador": "true"
+}
